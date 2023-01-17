@@ -18,8 +18,19 @@ namespace Zadanie3tabele
         {
             InitializeComponent();
             GridLoad();
+            
         }
+        public void comboBoxUpdateFromBase()
+        {
+            using (var db = new Obsluga())
+            {
+                {
+                    
 
+                }
+            }
+        }
+            
         public void GridLoad()
         {
             dataGridViewTabele.Rows.Clear();
@@ -37,12 +48,32 @@ namespace Zadanie3tabele
                                 k.NumerKlasy,
                                 n.NauczycielNazwa
                             };
+                var Wychowawcy = from u in db.Uczeń
+                            join k in db.Klasa on u.FK_Klasa equals k.IDKlasa
+                            join n in db.Nauczyciel on u.FK_Wychowawca equals n.IDNauczyciel
+                            select new
+                            {
+                                n.NauczycielNazwa
+                            };
                 
+                var KlasyLekcyjne = from u in db.Uczeń
+                                 join k in db.Klasa on u.FK_Klasa equals k.IDKlasa
+                                 join n in db.Nauczyciel on u.FK_Wychowawca equals n.IDNauczyciel
+                                 select new
+                                 {
+                                     k.NumerKlasy,
+                                 };
+
+
+                comboBoxKlasa.Items.AddRange(KlasyLekcyjne.ToArray());
+                comboBoxWychowca.Items.AddRange(Wychowawcy.ToArray());
+                //popraw combo boxy
                 dataGridViewTabele.DataSource = query.ToList();
                 dataGridViewTabele.Columns[0].HeaderText = "Imię";
                 dataGridViewTabele.Columns[1].HeaderText = "Nazwisko";
                 dataGridViewTabele.Columns[2].HeaderText = "Klasa";
                 dataGridViewTabele.Columns[3].HeaderText = "Nauczyciel";
+                
 
 
 

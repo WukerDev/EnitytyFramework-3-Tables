@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridViewTabele = new System.Windows.Forms.DataGridView();
-            this.comboBoxWychowaca = new System.Windows.Forms.ComboBox();
+            this.comboBoxWychowca = new System.Windows.Forms.ComboBox();
             this.textBoxImie = new System.Windows.Forms.TextBox();
             this.textBoxNazwisko = new System.Windows.Forms.TextBox();
             this.comboBoxKlasa = new System.Windows.Forms.ComboBox();
@@ -47,13 +47,13 @@
             this.dataGridViewTabele.Size = new System.Drawing.Size(597, 426);
             this.dataGridViewTabele.TabIndex = 0;
             // 
-            // comboBoxWychowaca
+            // comboBoxWychowca
             // 
-            this.comboBoxWychowaca.FormattingEnabled = true;
-            this.comboBoxWychowaca.Location = new System.Drawing.Point(12, 65);
-            this.comboBoxWychowaca.Name = "comboBoxWychowaca";
-            this.comboBoxWychowaca.Size = new System.Drawing.Size(157, 21);
-            this.comboBoxWychowaca.TabIndex = 1;
+            this.comboBoxWychowca.FormattingEnabled = true;
+            this.comboBoxWychowca.Location = new System.Drawing.Point(12, 65);
+            this.comboBoxWychowca.Name = "comboBoxWychowca";
+            this.comboBoxWychowca.Size = new System.Drawing.Size(157, 21);
+            this.comboBoxWychowca.TabIndex = 1;
             // 
             // textBoxImie
             // 
@@ -101,7 +101,7 @@
             this.Controls.Add(this.comboBoxKlasa);
             this.Controls.Add(this.textBoxNazwisko);
             this.Controls.Add(this.textBoxImie);
-            this.Controls.Add(this.comboBoxWychowaca);
+            this.Controls.Add(this.comboBoxWychowca);
             this.Controls.Add(this.dataGridViewTabele);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -114,7 +114,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridViewTabele;
-        private System.Windows.Forms.ComboBox comboBoxWychowaca;
+        private System.Windows.Forms.ComboBox comboBoxWychowca;
         private System.Windows.Forms.TextBox textBoxImie;
         private System.Windows.Forms.TextBox textBoxNazwisko;
         private System.Windows.Forms.ComboBox comboBoxKlasa;

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadanie3tabele", "Zadanie3tabele\Zadanie3tabele.csproj", "{CE0BB615-3264-4470-A1F2-436290CF43E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE0BB615-3264-4470-A1F2-436290CF43E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE0BB615-3264-4470-A1F2-436290CF43E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE0BB615-3264-4470-A1F2-436290CF43E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE0BB615-3264-4470-A1F2-436290CF43E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF4F2CAD-F2F7-4313-B3D0-FA31AD955E59}
+	EndGlobalSection
+EndGlobal

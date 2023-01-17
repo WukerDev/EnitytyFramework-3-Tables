@@ -54,6 +54,7 @@
             this.comboBoxWychowca.Name = "comboBoxWychowca";
             this.comboBoxWychowca.Size = new System.Drawing.Size(157, 21);
             this.comboBoxWychowca.TabIndex = 1;
+            this.comboBoxWychowca.SelectedIndexChanged += new System.EventHandler(this.comboBoxWychowca_SelectedIndexChanged);
             // 
             // textBoxImie
             // 
@@ -76,6 +77,7 @@
             this.comboBoxKlasa.Name = "comboBoxKlasa";
             this.comboBoxKlasa.Size = new System.Drawing.Size(157, 21);
             this.comboBoxKlasa.TabIndex = 5;
+            this.comboBoxKlasa.SelectedIndexChanged += new System.EventHandler(this.comboBoxKlasa_SelectedIndexChanged);
             // 
             // buttonZapis
             // 
@@ -85,6 +87,7 @@
             this.buttonZapis.TabIndex = 6;
             this.buttonZapis.Text = "Zapisz!";
             this.buttonZapis.UseVisualStyleBackColor = true;
+            this.buttonZapis.Click += new System.EventHandler(this.buttonZapis_Click);
             // 
             // imageList1
             // 
